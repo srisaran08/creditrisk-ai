@@ -1,0 +1,108 @@
+{
+  "model_version": "3a131cc5",
+  "trained_at": "2026-10-09T11:22:13",
+  "champion": "Logistic Regression",
+  "best_params": {
+    "C": 0.0745934328572655,
+    "l1_ratio": 0.0
+  },
+  "inner_cv_best_auc": 0.7735491071428572,
+  "explainer": "exact linear SHAP",
+  "libraries": {
+    "xgboost": false,
+    "shap": false
+  },
+  "cv_summary": [
+    {
+      "model": "Logistic Regression",
+      "roc_auc_mean": 0.7727,
+      "roc_auc_std": 0.0664,
+      "gini_mean": 0.5454,
+      "gini_std": 0.1328,
+      "ks_mean": 0.4661,
+      "ks_std": 0.1017,
+      "pr_auc_mean": 0.5968,
+      "pr_auc_std": 0.081,
+      "brier_mean": 0.171,
+      "brier_std": 0.0199,
+      "log_loss_mean": 0.515,
+      "log_loss_std": 0.0559,
+      "roc_auc_se": 0.0297
+    },
+    {
+      "model": "Random Forest",
+      "roc_auc_mean": 0.7924,
+      "roc_auc_std": 0.0543,
+      "gini_mean": 0.5848,
+      "gini_std": 0.1086,
+      "ks_mean": 0.472,
+      "ks_std": 0.0813,
+      "pr_auc_mean": 0.6347,
+      "pr_auc_std": 0.0839,
+      "brier_mean": 0.1658,
+      "brier_std": 0.0136,
+      "log_loss_mean": 0.5016,
+      "log_loss_std": 0.0358,
+      "roc_auc_se": 0.0243
+    },
+    {
+      "model": "Gradient Boosting (sklearn)",
+      "roc_auc_mean": 0.7704,
+      "roc_auc_std": 0.0516,
+      "gini_mean": 0.5408,
+      "gini_std": 0.1032,
+      "ks_mean": 0.4571,
+      "ks_std": 0.0848,
+      "pr_auc_mean": 0.5827,
+      "pr_auc_std": 0.0873,
+      "brier_mean": 0.1718,
+      "brier_std": 0.0199,
+      "log_loss_mean": 0.5199,
+      "log_loss_std": 0.0634,
+      "roc_auc_se": 0.0231
+    }
+  ],
+  "test": {
+    "roc_auc": 0.7911904761904761,
+    "gini": 0.5823809523809522,
+    "ks": 0.5595238095238095,
+    "pr_auc": 0.6491627862962237,
+    "brier": 0.16027934562694793,
+    "log_loss": 0.49243839867373657
+  },
+  "business": {
+    "approval_rate_rulebook": 0.58,
+    "bad_rate_rulebook_book": 0.15517241379310345,
+    "profit_per_app_rulebook": 2000.0,
+    "annual_uplift_vs_rulebook_inr": 45000000.0,
+    "threshold": 0.21,
+    "breakeven_pd_theory": 0.16666666666666666,
+    "approval_rate_model": 0.4,
+    "bad_rate_approve_all": 0.3,
+    "bad_rate_model_book": 0.1125,
+    "defaults_caught_pct": 0.85,
+    "good_loans_lost_pct": 0.4928571428571429,
+    "profit_per_app_model": 6500.0,
+    "profit_per_app_approve_all": -40000.0,
+    "profit_per_app_perfect": 35000.0,
+    "annual_uplift_inr": 465000000.0,
+    "value_captured_pct": 0.62,
+    "confusion": {
+      "tn": 71,
+      "fp": 69,
+      "fn": 9,
+      "tp": 51
+    }
+  },
+  "economics": {
+    "avg_ticket_inr": 500000,
+    "margin_good": 0.1,
+    "lgd": 0.5,
+    "annual_applications": 10000
+  },
+  "excluded_features": [
+    "personal_status_sex",
+    "foreign_worker"
+  ],
+  "runtime_sec": 282.7
+}
